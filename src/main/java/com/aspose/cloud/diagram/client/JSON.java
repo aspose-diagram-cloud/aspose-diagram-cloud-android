@@ -13,6 +13,8 @@
 
 package com.aspose.cloud.diagram.client;
 
+import android.util.Base64;
+
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 import com.google.gson.JsonDeserializationContext;
@@ -30,8 +32,8 @@ import com.google.gson.stream.JsonWriter;
 import java.io.IOException;
 import java.io.StringReader;
 import java.lang.reflect.Type;
-import java.util.Base64;
-//import android.util.Base64;
+//import java.util.Base64;
+import android.util.Base64;
 import java.util.Date;
 
 import org.joda.time.DateTime;
@@ -230,12 +232,12 @@ class LocalDateTypeAdapter extends TypeAdapter<LocalDate> {
 
  class ByteArrayToBase64TypeAdapter implements JsonSerializer<byte[]>, JsonDeserializer<byte[]> {
     public byte[] deserialize(JsonElement json, Type typeOfT, JsonDeserializationContext context) throws JsonParseException {
-        return Base64.getDecoder().decode(json.getAsString());
-        //return Base64.decode(json.getAsString(), Base64.DEFAULT);
+        //return Base64.getDecoder().decode(json.getAsString());
+        return Base64.decode(json.getAsString(), Base64.DEFAULT);
     }
 
     public JsonElement serialize(byte[] src, Type typeOfSrc, JsonSerializationContext context) {
-        return new JsonPrimitive(Base64.getEncoder().encodeToString(src));
-         //return new JsonPrimitive(new String(Base64.encode(src, Base64.DEFAULT)));
+        //return new JsonPrimitive(Base64.getEncoder().encodeToString(src));
+         return new JsonPrimitive(new String(Base64.encode(src, Base64.DEFAULT)));
     }
 }
