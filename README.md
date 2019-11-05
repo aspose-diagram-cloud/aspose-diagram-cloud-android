@@ -82,6 +82,23 @@ Add this dependency and repository to your project's POM:
 </repositories>
 ```
 
+### Gradle users
+
+```groovy
+allprojects {
+    repositories {
+        jcenter()
+        maven {
+            url 'https://repository.aspose.cloud/repo/'
+            name 'aspose'
+        }
+    }
+}
+dependencies {
+    compile(group: 'com.aspose', name: 'aspose-diagram-cloud-android', version: '19.10')
+}
+```
+
 # Examples
 Please, look at [Examples](EXAMPLES.md) document for basic usage or use the [Examples](Examples) folder for more sophisticated scenarios.
 
