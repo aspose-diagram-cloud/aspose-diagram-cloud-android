@@ -24,76 +24,71 @@ import io.swagger.annotations.ApiModelProperty;
 import java.io.IOException;
 
 /**
- * PointF
+ * ShapeData
  */
-@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2019-10-08T10:51:41.813+08:00")
-public class PointF {
-  @SerializedName("IsEmpty")
-  private Boolean isEmpty = null;
+@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2020-04-22T17:42:41.979+08:00")
+public class ShapeData {
+  @SerializedName("ID")
+  private Long ID = null;
 
-  @SerializedName("X")
-  private Double X = null;
+  @SerializedName("PinX")
+  private Double pinX = null;
 
-  @SerializedName("Y")
-  private Double Y = null;
+  @SerializedName("PinY")
+  private Double pinY = null;
 
-  public PointF isEmpty(Boolean isEmpty) {
-    this.isEmpty = isEmpty;
-    return this;
-  }
-
-  public PointF(double x,double y) {
-    this.X = x;
-    this.Y = y;
-  }
-
-   /**
-   * Get isEmpty
-   * @return isEmpty
-  **/
-  @ApiModelProperty(required = true, value = "")
-  public Boolean isIsEmpty() {
-    return isEmpty;
-  }
-
-  public void setIsEmpty(Boolean isEmpty) {
-    this.isEmpty = isEmpty;
-  }
-
-  public PointF X(Double X) {
-    this.X = X;
+  public ShapeData ID(Long ID) {
+    this.ID = ID;
     return this;
   }
 
    /**
-   * Get X
-   * @return X
+   * Get ID
+   * @return ID
   **/
   @ApiModelProperty(required = true, value = "")
-  public Double getX() {
-    return X;
+  public Long getID() {
+    return ID;
   }
 
-  public void setX(Double X) {
-    this.X = X;
+  public void setID(Long ID) {
+    this.ID = ID;
   }
 
-  public PointF Y(Double Y) {
-    this.Y = Y;
+  public ShapeData pinX(Double pinX) {
+    this.pinX = pinX;
     return this;
   }
 
    /**
-   * Get Y
-   * @return Y
+   * Get pinX
+   * @return pinX
   **/
   @ApiModelProperty(required = true, value = "")
-  public Double getY() {
-    return Y;
+  public Double getPinX() {
+    return pinX;
   }
 
-  public void setY(Double Y) {
-    this.Y = Y;
+  public void setPinX(Double pinX) {
+    this.pinX = pinX;
+  }
+
+  public ShapeData pinY(Double pinY) {
+    this.pinY = pinY;
+    return this;
+  }
+
+   /**
+   * Get pinY
+   * @return pinY
+  **/
+  @ApiModelProperty(required = true, value = "")
+  public Double getPinY() {
+    return pinY;
+  }
+
+  public void setPinY(Double pinY) {
+    this.pinY = pinY;
   }
 
 
@@ -105,26 +100,26 @@ public class PointF {
     if (o == null || getClass() != o.getClass()) {
       return false;
     }
-    PointF pointF = (PointF) o;
-    return Objects.equals(this.isEmpty, pointF.isEmpty) &&
-        Objects.equals(this.X, pointF.X) &&
-        Objects.equals(this.Y, pointF.Y);
+    ShapeData shapeData = (ShapeData) o;
+    return Objects.equals(this.ID, shapeData.ID) &&
+        Objects.equals(this.pinX, shapeData.pinX) &&
+        Objects.equals(this.pinY, shapeData.pinY);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(isEmpty, X, Y);
+    return Objects.hash(ID, pinX, pinY);
   }
 
 
   @Override
   public String toString() {
     StringBuilder sb = new StringBuilder();
-    sb.append("class PointF {\n");
+    sb.append("class ShapeData {\n");
     
-    sb.append("    isEmpty: ").append(toIndentedString(isEmpty)).append("\n");
-    sb.append("    X: ").append(toIndentedString(X)).append("\n");
-    sb.append("    Y: ").append(toIndentedString(Y)).append("\n");
+    sb.append("    ID: ").append(toIndentedString(ID)).append("\n");
+    sb.append("    pinX: ").append(toIndentedString(pinX)).append("\n");
+    sb.append("    pinY: ").append(toIndentedString(pinY)).append("\n");
     sb.append("}");
     return sb.toString();
   }

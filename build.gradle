@@ -1,5 +1,5 @@
 group = 'com.aspose'
-project.version = '19.10'
+project.version = '20.3'
 
 buildscript {
     repositories {
@@ -119,6 +119,6 @@ apply plugin: 'maven'
 
 group = 'com.aspose'
 // artifactId is taken by default, from folder name
-version = '19.10'
+version = '20.3'
 
 

@@ -26,8 +26,8 @@ public class TestBase {
     protected static final String clientId = "yourClientId";
     protected static final String clientSecret = "yourClientSecret";
 
-    private DiagramApi diagramApi;
-    private StorageApi storageApi;
+    private static DiagramApi diagramApi;
+    private static StorageApi storageApi;
 
     private static final String sourceFolder = "/mnt/sdcard/";;
     private static final String storageTestFOLDER = "SDKTests\\Android";
@@ -37,14 +37,14 @@ public class TestBase {
 
     }
 
-    protected DiagramApi GetDiagramApi() throws ApiException {
+    protected static DiagramApi GetDiagramApi() throws ApiException {
         if (diagramApi == null) {
             diagramApi = new DiagramApi(grantType, clientId, clientSecret);
         }
         return diagramApi;
     }
 
-    protected StorageApi GetStorageApi() throws ApiException {
+    protected static StorageApi GetStorageApi() throws ApiException {
         if (storageApi == null) {
             storageApi = new StorageApi(grantType, clientId, clientSecret);
         }
@@ -55,7 +55,7 @@ public class TestBase {
         return sourceFolder;
     }
 
-    protected String GetStorageTestFOLDER() {
+    protected static String GetStorageTestFOLDER() {
         return storageTestFOLDER;
     }
 
