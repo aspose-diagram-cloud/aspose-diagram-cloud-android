@@ -16,10 +16,7 @@
 ## New Features in Version 20.3
 
 * Added support to draw Polyline, Line & Ellipse on a page.
-* Added ability to:
-- Set page settings
-- Addition of an empty page
-- Get page information
+* Added ability to set page settings, add an empty page to the drawing and get page information.
 
 Please visit [Aspose.Diagram Cloud 20.3 Release Notes](https://docs.aspose.cloud/diagram/aspose-diagram-cloud-20-3-release-notes/) for detailed release notes.
 
