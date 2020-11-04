@@ -6,7 +6,7 @@
 
 ## Process Diagrams in the Cloud
 
-- Export Visio files to other drawing formats, raster images, fixed-layout and HTML.
+- Export Visio files to other Visio formats, raster images, fixed-layout and HTML.
 - Programmatically create Microsoft Visio diagram file from scratch.
 - Convert Visio flow-charts to other supported formats.
 - Upload your Visio diagrams to cloud storage for processing.
@@ -16,7 +16,7 @@
 ## New Features in Version 20.3
 
 * Added support to draw Polyline, Line & Ellipse on a page.
-* Added ability to set page settings, add an empty page to the drawing and get page information.
+* Added ability to set page settings, add an empty page and get page information.
 
 Please visit [Aspose.Diagram Cloud 20.3 Release Notes](https://docs.aspose.cloud/diagram/aspose-diagram-cloud-20-3-release-notes/) for detailed release notes.
 
