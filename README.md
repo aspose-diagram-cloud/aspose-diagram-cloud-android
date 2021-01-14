@@ -1,17 +1,29 @@
-![](https://img.shields.io/badge/api-v3.0-lightgrey) [![GitHub license](https://img.shields.io/github/license/aspose-diagram-cloud/aspose-Diagram-cloud-android)](https://github.com/aspose-diagram-cloud/aspose-Diagram-cloud-android/blob/master/LICENSE) 
+![](https://img.shields.io/badge/api-v3.0-lightgrey) [![GitHub license](https://img.shields.io/github/license/aspose-diagram-cloud/aspose-Diagram-cloud-android)](https://github.com/aspose-diagram-cloud/aspose-Diagram-cloud-android/blob/master/LICENSE)
 
-# Android SDK for Visio File Formats
+# Android Cloud REST API for Visio Processing
 
 [Aspose.Diagram Cloud SDK for Android](https://products.aspose.cloud/diagram/android) wraps the Aspose.Diagram REST API that allows create, export and render Microsoft Visio format files. Conversion includes to various other formats including .
 
-## Process Diagrams in the Cloud
+## Visio Processing Features
 
-- Export Visio files to other Visio formats, raster images, fixed-layout and HTML.
-- Programmatically create Microsoft Visio diagram file from scratch.
-- Convert Visio flow-charts to other supported formats.
-- Upload your Visio diagrams to cloud storage for processing.
+- [Convert diagrams](https://docs.aspose.cloud/diagram/convert-diagram-file-to-another-format/) to 20+ different file formats.
 - Retrieve document information of a Visio diagram.
+- Programmatically create a new Microsoft Visio diagram file.
+- Convert Visio flow-charts to other supported formats.
+- Upload your business-oriented Visio diagrams to cloud storage.
+- Export Visio files to raster images, fixed-layout, and HTML formats.
 
+## Read & Write Visio Formats
+**Microsoft Visio:** VSDX, VSX, VTX, VDX, VSSX, VSTX, VSDM, VSSM, VSTM
+
+## Save Visio As
+**Fixed Layout:** PDF, XPS
+**Images:** JPEG, PNG, BMP, TIFF, SVG, EMF
+**Web:** HTML
+**Other:** XAML, SWF
+
+## Read Visio Formats
+**Microsoft Visio:** VDW, VSD, VSS, VST
 
 ## New Features in Version 20.3
 
@@ -20,23 +32,7 @@
 
 Please visit [Aspose.Diagram Cloud 20.3 Release Notes](https://docs.aspose.cloud/diagram/aspose-diagram-cloud-20-3-release-notes/) for detailed release notes.
 
-## Read & Write Visio Formats
-
-**Microsoft Visio:** VSDX, VSX, VTX, VDX, VSSX, VSTX, VSDM, VSSM, VSTM
-
-## Save Visio As
-
-**Fixed Layout:** PDF, XPS
-**Images:** JPEG, PNG, BMP, TIFF, SVG, EMF
-**Web:** HTML
-**Other:** XAML, SWF
-
-## Read Visio Formats
-
-**Microsoft Visio:** VDW, VSD, VSS, VST
-
 ## Integrated Storage API
-
 * Upload, download, copy, move and delete files, including versions handling (if you are using Cloud storage that supports this feature - true by default).
 * Create, copy, move and delete folders.
 * Copy and move files and folders accross separate storages in scope of a single operation.
