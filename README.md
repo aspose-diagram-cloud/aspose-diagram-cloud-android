@@ -1,4 +1,4 @@
-![](https://img.shields.io/badge/api-v3.0-lightgrey) [![GitHub license](https://img.shields.io/github/license/aspose-diagram-cloud/aspose-Diagram-cloud-android)](https://github.com/aspose-diagram-cloud/aspose-Diagram-cloud-android/blob/master/LICENSE)
+![](https://img.shields.io/badge/api-v3.0-lightgrey) ![GitHub release (latest by date)](https://img.shields.io/github/v/release/aspose-diagram-cloud/aspose-Diagram-cloud-android)  [![GitHub license](https://img.shields.io/github/license/aspose-diagram-cloud/aspose-Diagram-cloud-android)](https://github.com/aspose-diagram-cloud/aspose-Diagram-cloud-android/blob/master/LICENSE)
 
 # Android Cloud REST API for Visio Processing
 
@@ -79,6 +79,18 @@ dependencies {
     compile(group: 'com.aspose', name: 'aspose-diagram-cloud-android', version: '20.3')
 }
 ```
+## Create New VDX Diagram in Android using Java
+
+```java
+	// Get your ClientId and ClientSecret from https://dashboard.aspose.cloud (free registration required).
+	DiagramApi api = new DiagramApi("client_credentials", "MY_CLIENT_ID", "MY_CLIENT_SECRET");
+
+	String fileName = "sample.vdx";
+	String folder = "my_output";
+	Boolean is_overwrite = "true";
+	CreateNewResponse response = api.postDiagramConvert(fileName, folder, is_overwrite);
+```
+
 
 ## Aspose.Diagram Cloud SDKs in Popular Languages
 
